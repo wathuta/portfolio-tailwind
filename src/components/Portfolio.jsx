@@ -57,8 +57,10 @@ const Portfolio = () => {
                 <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                     <img src={src} alt="" className='rounded:md hover:scale-105 duration-200' />
                     <div className='flex items-center justify-center'>
-                        <button className='w-1/2 px-6 py-3 hover:scale-105 duration-200' >Demo</button>
-                        <button className='w-1/2 px-6 py-3 hover:scale-105 duration-200'>Code</button>
+                        <button className='w-1/2 px-6 py-3 hover:scale-105 duration-200' >
+                            <a href="https://fabulous-souffle-de8265.netlify.app/">Demo</a>
+                        </button>
+                        <button className='w-1/2 px-6 py-3 hover:scale-105 duration-200'><a href="https://github.com/wathuta/portfolio-tailwind">Code</a></button>
                     </div>
                 </div>
                 ))
