@@ -12,7 +12,9 @@ const Portfolio = () => {
     const portfolio =[
         {
             id:1,
-            src:arrayDestruct
+            src:arrayDestruct,
+            demo:"https://fabulous-souffle-de8265.netlify.app/",
+            code:"https://github.com/wathuta/portfolio-tailwind"
             // add links
         },
         {
@@ -52,15 +54,15 @@ const Portfolio = () => {
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
                 {/* Cards */}
             {
-                portfolio.map(({id,src})=>(
+                portfolio.map(({id,src,demo,code})=>(
                     
                 <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                     <img src={src} alt="" className='rounded:md hover:scale-105 duration-200' />
                     <div className='flex items-center justify-center'>
                         <button className='w-1/2 px-6 py-3 hover:scale-105 duration-200' >
-                            <a href="https://fabulous-souffle-de8265.netlify.app/">Demo</a>
+                            <a href={demo}>Demo</a>
                         </button>
-                        <button className='w-1/2 px-6 py-3 hover:scale-105 duration-200'><a href="https://github.com/wathuta/portfolio-tailwind">Code</a></button>
+                        <button className='w-1/2 px-6 py-3 hover:scale-105 duration-200'><a href={code}>Code</a></button>
                     </div>
                 </div>
                 ))
